@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" type="text/css" href="styles/form.css">
+    <script type="text/javascript" src="scripts/locator.js"></script>
+    <script type="text/javascript" src="scripts/signup.js"></script>
+</head>
+
+<body>
+    <section class="section">
+        <article id="map">
+        </article>
+        <article class="form">
+            <form>
+                <fieldset>
+                    <legend>
+                        Sign Up Form
+                    </legend>
+                    <input type="text" placeholder="First Name" required pattern="[a-zA-Z]{5,25}" />
+                    <input type="text" placeholder="Last Name" required pattern="[a-zA-Z]*"/>
+                    <input type="date" placeholder="DOB" required min="1958-01-01" max="1996-12-31" />
+                    <input type="text" placeholder="Address" required  max="150" id="address"/>
+                    <input type="email" placeholder="email@domain.com" required/>
+                    <input type="text" placeholder="Choose a country" list="countryList" required/>
+                    <input type="file" placeholder="Profile Picture" id="photo" required onchange="displayPhoto(this)"/>
+                    <!--<input type="file" placeholder="PDF file" id="pdf" required onchange="getPDF(this)" accept="application/pdf" multiple/>-->
+                    <!--<input type="file" placeholder="XLSX file" id="xlsx" required onchange="getPDF(this)" accept="application/vnd.ms-excel" multiple/>-->
+
+                    <!--cdnjs cloudflare ajax/xslx lib for xlsx parse upload - xslx.js; jszip.js; xlsx.full.min.js-->
+
+                    <input type="submit" value="Submit"></button>
+                </fieldset>
+            </form>
+            <figure id="picPreview">
+                
+            </figure>
+            <datalist id="countryList">
+                <option>Country1</option>
+                <option>Country2</option>
+                <option>Country3</option>
+                <option>Country4</option>
+                <option>Country5</option>
+            </datalist>
+        </article>
+    </section>
+</body>
+
+</html>

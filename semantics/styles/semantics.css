@@ -1,0 +1,101 @@
+body {
+    display: block;
+    margin: 2px 0px;
+    overflow: none;
+}
+.mainsection {
+    width: 80%;
+    margin-left: 8%;
+    padding: 0% 1%;
+}
+
+.header {
+    height: 100px;
+    width: 80%;
+    margin: 0% 0% 0% 7%;
+}
+.content {
+    width: 60%;
+    margin: 1% 16%;
+    height: 370px;
+    border: 1px dashed black;
+}
+.footer {
+    height: 40px;
+    width: 80%;
+    margin: 0% 0% 5% 7%;
+}
+
+.figure {
+    width: 20%;
+    float: left;
+    margin: 0%;
+}
+
+.logo {
+    width: 100%;
+    padding: 0px;
+}
+
+.menu {
+    margin: 0%;
+}
+
+ul {
+    margin: 0%;
+}
+ul li{
+    display: inline;
+    margin-right: 3%;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li a:hover{
+    background-color: white;
+    color: red;
+}
+
+.nav {
+    text-align: right;
+}
+
+.submenu ul li {
+   font-size: small;
+}
+
+.mainmenu{
+    font-size: large;
+    color: blue;
+    margin-top: 5%;
+}
+
+.content p{
+    column-count: 3;
+    text-align: justify;
+    column-gap: 7px;
+    column-width: 10%;
+    column-rule: 2px dotted red; 
+    overflow-x: scroll;
+    height: 100%;
+    padding: 2px 2px;
+}
+
+
+.content p:first-letter {
+    color: green;
+    font-size: xx-large;
+}
+
+.content p:first-line {
+    color: darkmagenta;
+    font-size: x-large;
+}
+
+.footer marquee {
+    margin: 5% 15%;
+    text-decoration-style: wavy;
+    font-style: oblique;
+}
